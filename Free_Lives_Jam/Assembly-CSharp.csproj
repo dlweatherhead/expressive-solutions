@@ -45,6 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ColorPicker\Scripts\ColorHuePicker.cs" />
+     <Compile Include="Assets\ColorPicker\Scripts\ColorIndicator.cs" />
+     <Compile Include="Assets\ColorPicker\Scripts\ColorSaturationBrightnessPicker.cs" />
+     <Compile Include="Assets\ColorPicker\Scripts\Draggable.cs" />
+     <Compile Include="Assets\ColorPicker\Scripts\ExampleColorReceiver.cs" />
+     <Compile Include="Assets\ColorPicker\Scripts\HSBColor.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Examples\Scripts\ExampleGenerators.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Obsolete\ObsoleteExtensions.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Obsolete\Scripts\Generators\BatchGenerator.cs" />
@@ -122,11 +128,13 @@
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\VectorExtensions.cs" />
      <Compile Include="Assets\_Scripts\MouseDrag.cs" />
      <Compile Include="Assets\_Scripts\PolygonCreator.cs" />
-     <Compile Include="Assets\_Scripts\PolygonTester.cs" />
      <Compile Include="Assets\_Scripts\Triangulator.cs" />
+     <None Include="Assets\ColorPicker\Shaders\ColorHue.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\BinaryHeap\BinaryHeapLincense.txt" />
+     <None Include="Assets\ColorPicker\Shaders\ColorSaturationBrightness.shader" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\KDTree\KDTreeLicense.txt" />
+     <None Include="Assets\ColorPicker\Shaders\SolidColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

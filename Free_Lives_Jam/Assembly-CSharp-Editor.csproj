@@ -56,9 +56,12 @@
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Editor\PropertyDrawers\NonNegativeDrawer.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Editor\PropertyDrawers\PositivePropertyDrawer.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Editor\StringExtensions.cs" />
+     <None Include="Assets\ColorPicker\Shaders\ColorHue.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\BinaryHeap\BinaryHeapLincense.txt" />
+     <None Include="Assets\ColorPicker\Shaders\ColorSaturationBrightness.shader" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\KDTree\KDTreeLicense.txt" />
+     <None Include="Assets\ColorPicker\Shaders\SolidColor.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

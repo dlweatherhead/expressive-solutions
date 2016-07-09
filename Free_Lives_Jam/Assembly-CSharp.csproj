@@ -120,6 +120,8 @@
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\ScreenShotTaker.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\TransformExtensions.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\VectorExtensions.cs" />
+     <Compile Include="Assets\_Scripts\MouseDrag.cs" />
+     <Compile Include="Assets\_Scripts\PolygonCreator.cs" />
      <Compile Include="Assets\_Scripts\PolygonTester.cs" />
      <Compile Include="Assets\_Scripts\Triangulator.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

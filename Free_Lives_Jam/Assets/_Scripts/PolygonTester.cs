@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
 public class PolygonTester : MonoBehaviour {
+
+
 	void Start () {
 		// Create Vector2 vertices
 		Vector2[] vertices2D = new Vector2[] {
@@ -47,5 +49,8 @@ public class PolygonTester : MonoBehaviour {
 		// Add collider to object
 		PolygonCollider2D collider = gameObject.AddComponent(typeof(PolygonCollider2D)) as PolygonCollider2D;
 		collider.points = vertices2D;
+
+		// Add the Mouse Drag script
+		gameObject.AddComponent<MouseDrag>();
 	}
 }

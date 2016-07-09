@@ -5,17 +5,17 @@ public class PolygonTester : MonoBehaviour {
 		// Create Vector2 vertices
 		Vector2[] vertices2D = new Vector2[] {
 			new Vector2(0,0),
-			new Vector2(0,5),
-			new Vector2(5,5),
-			new Vector2(5,10),
-			new Vector2(0,10),
-			new Vector2(0,15),
-			new Vector2(15,15),
-			new Vector2(15,10),
-			new Vector2(10,10),
-			new Vector2(10,5),
-			new Vector2(15,5),
-			new Vector2(15,0),
+			new Vector2(0,2),
+			new Vector2(2,2),
+			new Vector2(2,4),
+			new Vector2(0,4),
+			new Vector2(0,6),
+			new Vector2(6,6),
+			new Vector2(6,4),
+			new Vector2(4,4),
+			new Vector2(4,2),
+			new Vector2(6,2),
+			new Vector2(6,0),
 		};
 
 		// Use the triangulator to get indices for creating triangles
@@ -42,6 +42,10 @@ public class PolygonTester : MonoBehaviour {
 
 		// Add a rigidbody to the gameobject
 		Rigidbody2D rigidBody = gameObject.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
-		rigidBody.isKinematic = true;
+		rigidBody.mass = 1000;
+
+		// Add collider to object
+		PolygonCollider2D collider = gameObject.AddComponent(typeof(PolygonCollider2D)) as PolygonCollider2D;
+		collider.points = vertices2D;
 	}
 }

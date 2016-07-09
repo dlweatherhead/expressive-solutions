@@ -120,8 +120,8 @@
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\ScreenShotTaker.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\TransformExtensions.cs" />
      <Compile Include="Assets\Gamelogic\Extensions\Plugin\Scripts\UnityExtensions\VectorExtensions.cs" />
-     <Compile Include="Assets\PolygonTester.cs" />
-     <Compile Include="Assets\Triangulator.cs" />
+     <Compile Include="Assets\_Scripts\PolygonTester.cs" />
+     <Compile Include="Assets\_Scripts\Triangulator.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\BinaryHeap\BinaryHeapLincense.txt" />
      <None Include="Assets\Gamelogic\Extensions\Plugin\Scripts\Internal\KDTree\KDTreeLicense.txt" />

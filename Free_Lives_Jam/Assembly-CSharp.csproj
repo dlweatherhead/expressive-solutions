@@ -141,6 +141,7 @@
      <Compile Include="Assets\HSVPicker\UI\SVBoxSlider.cs" />
      <Compile Include="Assets\HSVPicker\UtilityScripts\BoxSlider.cs" />
      <Compile Include="Assets\HSVPicker\UtilityScripts\HSVUtil.cs" />
+     <Compile Include="Assets\_Scripts\BasicCharacterMove.cs" />
      <Compile Include="Assets\_Scripts\ColorChanger.cs" />
      <Compile Include="Assets\_Scripts\ColorPickerActivator.cs" />
      <Compile Include="Assets\_Scripts\MouseDrag.cs" />

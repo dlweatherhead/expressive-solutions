@@ -8,42 +8,36 @@ public class PolygonCreator : MonoBehaviour {
 	public GameObject widget;
 	public GameObject emptyPoly;
 
+	public static bool placeMode = true;
+
 	List<Vector2> points = new List<Vector2>();
 
 	bool editMode = false;
 
 	void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.E))  {
-			if(editMode) {
-				editMode = false;
-				ClearPoints();
-				ClearList();
-			} else {
-				editMode = true;
+	{		
+		if(placeMode) {
+
+			if(Input.GetMouseButtonDown(0) && editMode) {
+				float x = Input.mousePosition.x;
+				float y = Input.mousePosition.y;
+				Vector3 v3 = Camera.main.ScreenToWorldPoint(new Vector3(x, y, 0));
+				AddNewPoint(v3);
 			}
 
-			Debug.Log("EditMode is " + editMode);
+			if(Input.GetMouseButtonDown(1)) {
 
+				if(editMode) {
+					editMode = false;
+					ClearPoints();
+					CreateObject();
+					ClearList();
+				} else {
+					editMode = true;
+				}
+			}	
 		}
 
-		if(Input.GetMouseButtonDown(0) && editMode) {
-			float x = Input.mousePosition.x;
-			float y = Input.mousePosition.y;
-			Vector3 v3 = Camera.main.ScreenToWorldPoint(new Vector3(x, y, 0));
-			AddNewPoint(v3);
-		}
-
-		if(Input.GetMouseButtonDown(1) && editMode) {
-			// Clear the Visual Points
-			ClearPoints();
-			// Create the object from the vertices
-			CreateObject();
-			// Clear the Vertices out.
-			ClearList();
-
-			editMode = false; // reset the edit mode
-		}
 	}
 
 	void AddNewPoint(Vector2 v2) {
@@ -55,7 +49,9 @@ public class PolygonCreator : MonoBehaviour {
 	}
 
 	void CreateObject() {
-		CreatePolygon(points.ToArray(), emptyPoly);
+		if(points.Count > 1) {
+			CreatePolygon(points.ToArray(), emptyPoly);	
+		}
 	}
 
 	void ClearPoints() {

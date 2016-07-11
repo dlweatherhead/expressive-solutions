@@ -28,6 +28,8 @@ public class GlobalLevelManager : MonoBehaviour {
 	static string editPlayer = P2Name;
 	static string activePlayer = P1Name;
 
+	static public Color colorSelected;
+
 	// Use this for initialization
 	void Start () {
 
@@ -59,6 +61,8 @@ public class GlobalLevelManager : MonoBehaviour {
 		PolygonCreator.placeMode = true;
 		LevelExit.editMode = true;
 		Platformer2DUserControl.moveMode = false;
+
+
 	}
 
 	public void Update() {
@@ -141,5 +145,9 @@ public class GlobalLevelManager : MonoBehaviour {
 		PlayerPrefs.SetFloat("P1Score", 0f);
 		PlayerPrefs.SetFloat("P2Score", 0f);
 		SceneManager.LoadScene(3);
+	}
+
+	public void ColorChanged(Color color) {
+		colorSelected = color;
 	}
 }

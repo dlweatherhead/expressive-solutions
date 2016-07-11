@@ -112,6 +112,9 @@ public class PolygonCreator : MonoBehaviour {
 		collider.points = vertices2D;
 
 		// Add the Mouse Drag script
-		gameObject.AddComponent<MouseDrag>();
+		//gameObject.AddComponent<MouseDrag>();
+
+		// Add the Color Change Script
+		gameObject.AddComponent<ColorChanger>();
 	}
 }

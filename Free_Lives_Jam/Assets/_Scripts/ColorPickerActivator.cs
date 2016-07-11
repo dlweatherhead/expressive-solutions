@@ -4,8 +4,7 @@ using System.Collections;
 public class ColorPickerActivator : MonoBehaviour {
 
 	private bool isActive = false;
-	private GameObject colorPicker;
-
+	public static GameObject colorPicker;
 
 	// Use this for initialization
 	void Start () {

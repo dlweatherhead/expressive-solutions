@@ -13,6 +13,8 @@ public class ColorIndicator : MonoBehaviour {
 	{
 		GetComponent<Renderer>().sharedMaterial.SetColor ("_Color", color.ToColor());
 		transform.parent.BroadcastMessage("OnColorChange", color, SendMessageOptions.DontRequireReceiver);
+
+		GlobalLevelManager.colorSelected = color.ToColor();
 	}
 
 	void SetHue(float hue)

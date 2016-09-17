@@ -116,5 +116,8 @@ public class PolygonCreator : MonoBehaviour {
 
 		// Add the Color Change Script
 		gameObject.AddComponent<ColorChanger>();
+
+		// Add Color Indicator Script
+		//gameObject.AddComponent<ColorIndicator>();
 	}
 }
